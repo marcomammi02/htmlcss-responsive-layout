@@ -116,3 +116,110 @@
 
 
 /* items section */
+.items-section{
+    padding: 3rem 0;
+}
+
+.items-section .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card{
+    flex: 1 1 100%;
+    background-color: #b5ddff;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.card-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card-img .left{
+    flex: 0 0 100%;
+}
+
+.card-img img{
+    display: block;
+    width: 195px;
+    margin-bottom: -1rem;
+}
+
+
+/* items-section card style*/
+.card h3{
+    text-align: center;
+    color: #0084FD;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.card-img h3{
+    text-align: left;
+}
+
+.card .icon-box{
+    text-align: center;
+}
+
+.card .fa-solid{
+    color: #0084FD;
+    font-size: 5rem;
+}
+
+.card p{
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.card-img p{
+    text-align: left;
+}
+
+.card .btn-app-store{
+    color: #ffffff;
+    background-color: #0084FD;
+    padding: 0.5rem 3rem;
+    width: 200px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+@media screen and (min-width: 376px) {
+    .items-section .card{
+        flex-basis: calc((100% - 2rem) / 3);
+    }
+    
+    .items-section .card-img{
+        flex-basis: calc(2 * ((100% - 1rem) / 3));
+    }
+    
+    .card-img{
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (min-width: 811px) {
+    .card-img .left{
+        flex: 0 0 50%;
+    }
+
+    .card-img img{
+        align-self: flex-end;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .card .btn-app-store{
+        margin-bottom: 1rem;
+    }
+}
+
+
