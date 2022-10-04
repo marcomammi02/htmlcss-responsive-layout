@@ -19,6 +19,12 @@
     padding: 0 1rem;
 }
 
+.container-footer{
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
 
 /* navbar */
 .nav-top{
@@ -586,4 +592,28 @@
     .get-started-btn{
         padding: 1.2rem 2.6rem;
     }
+}
+
+
+/* footer */
+footer{
+    background-color: #333333;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+footer p:first-child{
+    margin-bottom: 3rem;
+}
+
+footer p{
+    color: #ffffff;
+}
+
+footer a{
+    color: #9792E4;
+}
+
+footer a:visited{
+    color: #9792E4;
 }
