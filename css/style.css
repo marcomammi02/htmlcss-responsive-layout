@@ -117,7 +117,7 @@
 
 /* items section */
 .items-section{
-    padding: 3rem 0;
+    padding: 4rem 0;
 }
 
 .items-section .container{
@@ -150,8 +150,6 @@
     margin-bottom: -1rem;
 }
 
-
-/* items-section cards */
 .card h3{
     text-align: center;
     color: #0084FD;
@@ -414,10 +412,98 @@
     .benefit-card{
         flex-basis: calc((100% - 2rem) / 2);
     }
+
+    .benefit-card h1{
+        font-size: 4rem;
+    }
 }
 
 @media screen and (min-width: 811px){
     .benefit-card{
         flex-basis: calc((100% - 4rem) / 3);
+    }
+}
+
+
+/* about us */
+.about-us-section{
+    padding: 4rem 0;
+}
+
+.about-us-section .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+
+.about-us-text h1{
+    font-size: 2.5rem;
+    color: #9792E4;
+}
+
+.about-us-text p{
+    line-height: 2rem;
+    margin-top: 2.5rem;
+}
+
+.about-us-img .img-box{
+    width: 50%;
+    max-width: 200px;
+    position: relative;
+    margin: 1.5rem 0;
+}
+
+.about-us-img img{
+    width: 100%;
+    clip-path: circle();
+}
+
+.about-us-img .fa-solid{
+    color: #9792E4;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 3rem;
+}
+
+.about-us-img h3{
+    color: #9792E4;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.linkedin-btn{
+    color: #ffffff;
+    background-color: #9792E4;
+    padding: .5rem;
+    width: fit-content;
+    margin-top: 1.5rem;
+    border-radius: 30px;
+}
+
+@media screen and (min-width: 550px) {
+    .about-us-text{
+        flex-basis: calc((100% - 2rem) / 2);
+    }
+    
+    .about-us-img{
+        flex-basis: calc((100% - 2rem) / 2);
+        padding: 0 3rem;
+    }
+
+    .about-us-img .img-box{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 811px) {
+    .about-us-text{
+        flex-basis: calc(2 * ((100% - 2rem) / 3));
+    }
+    
+    .about-us-img{
+        flex-basis: calc((100% - 2rem) / 3);
+        padding: 0 3rem;
     }
 }
