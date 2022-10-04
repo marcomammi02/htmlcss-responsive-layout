@@ -187,7 +187,7 @@
     color: #ffffff;
     background-color: #0084FD;
     padding: 0.5rem 3rem;
-    width: 200px;
+    width: fit-content;
     border-radius: 20px;
     margin-top: 30px;
 }
@@ -290,5 +290,71 @@
     .card-app-developement{
         flex-basis: calc(40% - 2rem);
         padding: 2rem;
+    }
+}
+
+
+/* testimonials */
+.testimonials-section{
+    padding: 4rem 0;
+}
+
+.testimonials-section>*{
+    text-align: center;
+}
+
+.testimonials-section h4{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.testimonials-section h2{
+    color: #9792E4;
+    padding: 1.5rem 0;
+    font-size: 1.8rem;
+}
+
+.testimonials-section p{
+    line-height: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.card-testimonial{
+    background-color: #9792E4;
+    border-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 1.5rem 0;
+    padding: 1rem;
+}
+
+.card-testimonial img{
+    width: 80%;
+    margin: 1.5rem 0;
+    clip-path: circle();
+}
+
+.card-testimonial p{
+    color: #ffffff;
+}
+
+@media screen and (min-width:650px) {
+    .card-testimonial{
+        padding: 0;
+    }
+
+    .testimonial-img{
+        flex-basis: calc(100% / 3);
+    }
+
+    .card-testimonial img{
+        width: 90%;
+    }
+    
+    .testimonial-text{
+        flex-basis: calc(2 * (100% / 3));
+        margin: 2rem 0;
+        text-align: left;
     }
 }
