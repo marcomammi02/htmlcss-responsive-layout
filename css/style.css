@@ -151,7 +151,7 @@
 }
 
 
-/* items-section card style*/
+/* items-section cards */
 .card h3{
     text-align: center;
     color: #0084FD;
@@ -223,3 +223,72 @@
 }
 
 
+/* strategic section */
+.strategic-planning-section{
+    background-color: #9792E4;
+    padding: 4rem 0;
+}
+
+.strategic-planning-section img{
+    width: 100%;
+}
+
+.strategic-planning-section h2{
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin: 3rem 0;
+}
+
+.card-strategic-planning p{
+    color: #ffffff;
+    line-height: 1.5rem;
+}
+
+.card-app-developement{
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 30px;
+    margin-top: 2rem;
+}
+
+.card-app-developement h3{
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.card-app-developement p{
+    text-align: center;
+    font-style: italic;
+    line-height: 1.5rem;
+}
+
+.btn-app-developement{
+    text-align: center;
+}
+
+.card-app-developement .fa-solid{
+    background-color: #9792E4;
+    border-radius: 50%;
+    padding: 1rem 1.2rem;
+    margin-top: 1rem
+}
+
+@media screen and (min-width:811px){
+    .strategic-planning-section .container{
+        display: flex;
+        align-items: flex-end;
+        gap: 5rem
+    }
+    .card-strategic-planning{
+        flex-basis: calc(50% - 2rem);
+    }
+
+    .card-strategic-planning img{
+        margin: 6rem 0;
+    }
+
+    .card-app-developement{
+        flex-basis: calc(40% - 2rem);
+        padding: 2rem;
+    }
+}
