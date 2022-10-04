@@ -18,6 +18,7 @@
 .nav-top{
     background-color: #0084fd;
     height: 4.7rem;
+    position: relative;
 }
 
 .nav-top .container{
@@ -29,7 +30,24 @@
 
 .nav-top ul{
     display: none;
-    
+    position: absolute;
+    top: 4.7rem;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    list-style-type: none;
+    text-align: center;
+}
+
+.nav-top li{
+    padding: 1rem;
+    border-bottom: 2px solid grey;
+}
+
+.nav-top .nav-link, .btn{
+    align-items: center;
+    color: #000000;
+    text-decoration: none;
 }
 
 .nav-top .hamburger{
@@ -37,19 +55,26 @@
     font-size: 2rem;
 }
 
+.nav-top .hamburger:hover + ul{
+    display: block;
+}
+
 @media screen and (min-width:811px) {
     .nav-top ul{
+        position: unset;
+        background-color: unset;
         display: flex;
-        list-style-type: none;
         align-items: center;
         height: 100%;
-        color: #ffffff;
+        
     }
     
     .nav-top li{
         height: 100%;
         display: flex;
         align-items: center;
+        color: #ffffff;
+        padding: 0;
     }
     
     .nav-top .nav-link{
@@ -60,7 +85,7 @@
         margin-left: 2.5rem;
         padding: 2px;
     }
-    
+
     .nav-top .nav-link:visited{
         color: #ffffff;
     }
@@ -88,3 +113,6 @@
         display: none;
     }
 }
+
+
+/* items section */
