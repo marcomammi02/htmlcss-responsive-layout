@@ -130,6 +130,7 @@
 /* items section */
 .items-section{
     padding: 4rem 0;
+    background-color: #ffffff;
 }
 
 .items-section .container{
@@ -307,6 +308,7 @@
 /* testimonials */
 .testimonials-section{
     padding: 4rem 0;
+    background-color: #ffffff;
 }
 
 .testimonials-section>*{
@@ -440,6 +442,7 @@
 /* about us */
 .about-us-section{
     padding: 4rem 0;
+    background-color: #ffffff;
 }
 
 .about-us-section .container{
